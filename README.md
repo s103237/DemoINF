@@ -1,4 +1,4 @@
-# 2020.10.23 druga wersja szablonu #
+# 2020.10.27 druga wersja szablonu #
 ## Zmiany ##
     Zmieniono logo PO oraz dodano logo WE
     Zmieniono clasę dokumentu
