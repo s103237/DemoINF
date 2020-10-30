@@ -1,5 +1,5 @@
-% szablon sprawozdania z dnia 2020-10-20
-\documentclass{mwart}
+% szablon sprawozdania z dnia 2020-10-27
+\documentclass{article} % mwart , article
 \usepackage[polish]{babel}
 \usepackage[utf8]{inputenc}	
 \usepackage{polski}	
@@ -7,7 +7,7 @@
 \frenchspacing	
 \usepackage{indentfirst}
 % PAKIETY DO MODYFIKACJI SRONY
-\usepackage {fancybox} 
+\usepackage{fancybox} 
 \usepackage{geometry}
 \geometry{
 	total={170mm,250mm},
@@ -23,7 +23,15 @@
 \usepackage{color, colortbl}
 \definecolor{Gray}{gray}{0.9}
 \usepackage{lipsum}
-%
+% USTAWIENIA SUBSECTION
+\usepackage[compact]{titlesec}
+\titleformat{\subsection}[runin]
+{\normalfont\large\bfseries}{\thesubsection}{1em}{}[{\\[0,5em]}]
+\titlespacing*{\subsection}{1cm}{1em}{0em}
+% dodanie FORCEINDENT
+\newcommand{\forceindent}{\leavevmode{\parindent=1cm\indent}} %
+
+
 % TYTUŁ, DATY ORAZ DANE OSOBY OPRACOWUJĄCEJ SPRAWOZDANIE
 \def\AuthorFirstName{MARCIN}
 \def\AuthorLastName{KOWOL}
@@ -40,7 +48,7 @@
 	\begin{table}
 		\resizebox{\textwidth}{!}{\begin{tabular}{|p{2cm}|p{4cm}|p{3cm}|p{3cm}|l|}
 		\hline 
-		\multirow{4}{*}{\includegraphics[width=2cm]{image/logotyp-politechnika-opolska-01}} & PRZEDMIOT: & \multicolumn{3}{l|}{ \makecell[l]{\noalign{\vskip3pt}PRZEDMIOT WYBIERALNY XIV:\\ NARZ\k{E}DZIA INFORMATYCZNE W PRAKTYCE \\IN\.{Z}YNIERSKIEJ}}\tabularnewline
+		\multirow{4}{*}{\makecell[l]{\includegraphics[width=2cm]{image/ModLogoPO}\\\includegraphics[width=2cm]{image/ModLogoWE}}} & PRZEDMIOT: & \multicolumn{3}{l|}{ \makecell[l]{\noalign{\vskip3pt}PRZEDMIOT WYBIERALNY XIV:\\ NARZ\k{E}DZIA INFORMATYCZNE W PRAKTYCE \\IN\.{Z}YNIERSKIEJ}}\tabularnewline
 		\cline{2-5} \cline{3-5} \cline{4-5} \cline{5-5} 
 		& KIERUNEK STUDIÓW: & INFORMATYKA & ROK STUDIÓW: & IV\tabularnewline
 		\cline{2-5} \cline{3-5} \cline{4-5} \cline{5-5} 
@@ -59,23 +67,25 @@
 		\end{tabular}}
 	\end{table}
 % POCZĄTEK SPRAWOZDANIA
+	
 	\section{Zadanie 4 z zajęć laboratoryjnych}
 		\subsection{Cel ćwiczenia}
-			\lipsum[1-8][2-8]
+			\forceindent \lipsum[1-8][2-8]
 		\subsection{Algorytm programu}	
-			\lipsum[1-8][2-8]	
+			\forceindent\lipsum[1-8][2-8]	
 		\subsection{Opis programu}
-			\lipsum[3-8][2-8]	
+			\forceindent\lipsum[3-8][2-8]	
 		\subsection{Podsumowanie}
-			\lipsum[1-8][2-8]	
+			\forceindent\lipsum[1-8][2-8]	
 	\section{Zadanie 5 z zajęć laboratoryjnych}
 		\subsection{Cel ćwiczenia}
-			\lipsum[1-8][2-8]
+			\forceindent\lipsum[1-8][2-8]
+		
 		\subsection{Algorytm programu}
-			\lipsum[1-8][2-8]		
+			\forceindent\lipsum[1-8][2-8]		
 		\subsection{Opis programu}
-			\lipsum[1-8][1-18]	
+			\forceindent\lipsum[1-8][1-18]	
 		\subsection{Podsumowanie}
-			\lipsum[1-8][2-8]			
+			\forceindent\lipsum[1-8][2-8]			
 	
 \end{document}	
