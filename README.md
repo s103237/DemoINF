@@ -1,4 +1,4 @@
-# 2024.10.01 druga wersja szablonu #
+# 2024.10.01 trzecia wersja szablonu #
 ## Zmiany ##
 	Poprawiono kod sprawozdania
 # 2020.10.27 druga wersja szablonu #
