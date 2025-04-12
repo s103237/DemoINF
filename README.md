@@ -2,7 +2,7 @@
 ## Podtytul
 * lista punktowana
   $$
-  \oint_0^5\sin(x) dx
+  \oint_0^5 \sin(x) dx
   $$
   
 ### Podpodtytul
