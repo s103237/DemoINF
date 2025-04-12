@@ -1,1 +1,3 @@
 Test jakis
+
+moja zmiana na przegladarece
