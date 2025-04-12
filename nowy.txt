@@ -1,1 +1,3 @@
 Test jakis
+
+edycja w visual code lokalnie
